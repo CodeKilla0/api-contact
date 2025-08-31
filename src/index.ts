@@ -20,7 +20,6 @@ export const app: Application = express();
 // ===== Configuration Socket IO =====
 const server = http.createServer(app);
 
-app.use(morgan("combined"));
 
 // const allowedOrigins = [
 //   "http://localhost:3000",
@@ -63,8 +62,9 @@ app.use(
 );
 
 // ===== ROUTES =====
-app.use("/api/v1/contacts", routeContact);
+app.use(morgan("combined"));
 
+app.use("/api/v1/contacts", routeContact);
 
 // ===== Route de test =====
 app.get("/", (_req: Request, res: Response) => {
