@@ -5,6 +5,7 @@ import rateLimit from "express-rate-limit";
 import { PrismaClient } from "@prisma/client";
 import http from "http";
 import dotenv from "dotenv";
+import morgan from "morgan";
 
 dotenv.config();
 // Routes
@@ -18,6 +19,8 @@ export const app: Application = express();
 
 // ===== Configuration Socket IO =====
 const server = http.createServer(app);
+
+app.use(morgan("combined"));
 
 // const allowedOrigins = [
 //   "http://localhost:3000",
