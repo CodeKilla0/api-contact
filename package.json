@@ -24,6 +24,7 @@
     "express-validator": "^7.2.1",
     "helmet": "^8.1.0",
     "http": "^0.0.1-security",
+    "morgan": "^1.10.1",
     "prisma": "^6.15.0",
     "sqlite3": "^5.1.7",
     "ts-node": "^10.9.2",
