@@ -1,0 +1,6 @@
+[
+  {
+    "type": "sqlite",
+    "path": "/Users/macbookpro/Documents/api-contact/prisma/dev.db"
+  }
+]

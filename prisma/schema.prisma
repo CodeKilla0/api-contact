@@ -1,0 +1,20 @@
+// prisma/schema.prisma
+datasource db {
+    provider = "sqlite"
+    url      = env("DATABASE_URL")
+}
+
+generator client {
+    provider = "prisma-client-js"
+}
+
+// Define your models here, e.g.,
+model Contact {
+  id    Int     @id @default(autoincrement())
+  email String  @unique
+  name  String?
+  phone String?
+  address String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}

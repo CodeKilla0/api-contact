@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "../main_de_maitre/pressing-backend"
+		},
+		{
+			"path": "../projet"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"DockerRun.DisableDockerrc": true,
+		"liveServer.settings.multiRootWorkspaceName": "main_de_maitre"
+	}
+}
